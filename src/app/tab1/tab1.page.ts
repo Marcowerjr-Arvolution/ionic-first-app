@@ -1,12 +1,20 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-tab1',
   templateUrl: 'tab1.page.html',
   styleUrls: ['tab1.page.scss']
 })
-export class Tab1Page {
+export class Tab1Page implements OnInit {
 
   constructor() {}
 
+  ngOnInit() {
+    let numero = 1;
+    numero = 2;
+    numero++;
+    numero++;
+
+    console.log('%c⧭', 'color: #ff0000', 'Hello from ngOnInit() in Tab1Page');
+  }
 }
